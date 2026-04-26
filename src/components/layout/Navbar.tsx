@@ -81,6 +81,9 @@ export default function Navbar() {
           <Link to="/" className="p-2 hover:bg-surface-hover rounded-lg transition-colors" title="Home">
             <Home size={20} />
           </Link>
+          <Link to="/search" className="p-2 hover:bg-surface-hover rounded-lg transition-colors sm:hidden" title="Search">
+            <Search size={20} />
+          </Link>
           <Link to="/notifications" className="p-2 hover:bg-surface-hover rounded-lg transition-colors relative" title="Notifications">
             <Bell size={20} />
             {unreadCount > 0 && (
