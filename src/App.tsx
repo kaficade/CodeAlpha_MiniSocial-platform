@@ -7,6 +7,8 @@ import Login from '@/pages/Login';
 import Signup from '@/pages/Signup';
 import Profile from '@/pages/Profile';
 import Notifications from '@/pages/Notifications';
+import Search from '@/pages/Search';
+import NotFound from '@/pages/NotFound';
 
 export default function App() {
   return (
@@ -31,7 +33,9 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/profile/:userId" element={<Profile />} />
             <Route path="/notifications" element={<Notifications />} />
+            <Route path="/search" element={<Search />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>
